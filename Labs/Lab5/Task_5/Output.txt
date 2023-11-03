@@ -1,0 +1,45 @@
+Lab 5 task 5
+
+template <typename T>
+T funcExp (T list[], int size) {
+    int j;
+    T x = list[0];
+    T y = list[size - 1];
+	
+uses a templete to get some inputs (one list and an int)
+it then makes 2 templetes with variables of list[index 0]
+and a templete with varibale y list [indext of the int size -0] (size is 8 passed from the main)
+
+for (j = 1; j < (size - 1) /2; j++) {
+        if (x < list[j]) {
+            x = list[j];
+        }
+        if (y > list[size - 1 - j]) {
+            y = list[size - 1 -j];
+        }
+    }
+	
+this for loop takes the size (8 - 1) / 2 and loops 4 times
+then the if statment says that if x (0) is less than list [j] (j 0 to 4)
+then x will = the j when the if statement is true
+
+then the next if says y has to be greater than (list[8 - 1 - whatever j is in hte loop]) then
+y will = the above if statement
+
+then you return x and y together
+
+ int main() {
+    int list [8] = {1,2,3,4,5,6,7,8};
+    string strList[] = {"one", "fish", "two", "fish", "red", "fish", "blue", "fish"};
+
+    cout << funcExp(list, 8) << " :: " << funcExp(strList, 8) << endl;
+}
+the main just gets the lists 
+
+then it outputs the the templete with the chosen list and an int number (size) 
+so it outputs
+
+9 :: twoblue
+9 is just 2 ints added together, then displayed
+
+two blue being the indext that the for loop and if statement landed on then plused together as they are both strings they end up lie that

@@ -1,0 +1,6 @@
+1.
+M1 and m2 compile into one program and m3 just uses it as a shared library
+M3 is smaller by 240kb smaller
+2.
+M2 and M1 can run with M3, as the library is coded into it
+M3 uses a path to the library so it cant run without it
